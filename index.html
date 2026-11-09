@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Retail Sales & Returns Analytics</title>
+<style>
+:root{--accent:#28684d;color:#182a26;background:#f2f5f4;font:16px/1.5 system-ui,sans-serif}
+body{margin:0} main{max-width:1080px;margin:auto;padding:clamp(18px,5vw,68px)}
+header{background:#182a26;color:white;padding:clamp(20px,4vw,44px);border-radius:20px}
+.eyebrow{color:#b9e1cf;text-transform:uppercase;letter-spacing:.15em;font-size:.76rem;font-weight:700}
+h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.02;margin:.45em 0}
+h2{font-size:1.25rem;margin-top:0} section{margin-top:20px;background:white;border-radius:16px;padding:clamp(16px,3vw,30px)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:12px;margin-top:20px}
+.cards div{padding:16px;background:white;border-bottom:3px solid var(--accent);border-radius:12px}
+.cards span{display:block;color:#4b6159;font-size:.82rem}.cards strong{font-size:1.35rem}
+.bar-row{display:grid;grid-template-columns:7rem 1fr 6.5rem;gap:10px;align-items:center;margin:12px 0;font-size:.88rem}
+.track{background:#e7edeb;border-radius:12px;height:14px}.track i{display:block;background:var(--accent);height:100%;border-radius:12px}
+.scroll{overflow-x:auto;margin-bottom:16px}table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{padding:10px;text-align:left;border-bottom:1px solid #dbe5e0} th{background:#edf4f1}
+footer{color:#4b6159;margin:24px 0;font-size:.85rem}
+@media(max-width:450px){.bar-row{grid-template-columns:5.8rem 1fr 5.4rem;gap:5px;font-size:.75rem}}
+</style>
+<main><header><div class="eyebrow">Data analyst portfolio / synthetic data</div><h1>Retail Sales & Returns Analytics</h1><p>Which categories drive net revenue, and where do refunds erode it?</p></header>
+<div class="cards"><div><span>Orders</span><strong>1,200</strong></div><div><span>Gross</span><strong>$206,895.88</strong></div><div><span>Refund</span><strong>$18,078.44</strong></div><div><span>Net</span><strong>$188,817.44</strong></div><div><span>Refunded Orders %</span><strong>10.3%</strong></div></div>
+<section><h2>Monthly net revenue</h2><div class='bar-row'><span>2025-01</span><div class='track'><i style='width:98.0%'></i></div><b>$32,396.67</b></div><div class='bar-row'><span>2025-02</span><div class='track'><i style='width:96.2%'></i></div><b>$31,798.75</b></div><div class='bar-row'><span>2025-03</span><div class='track'><i style='width:95.5%'></i></div><b>$31,561.91</b></div><div class='bar-row'><span>2025-04</span><div class='track'><i style='width:85.4%'></i></div><b>$28,242.26</b></div><div class='bar-row'><span>2025-05</span><div class='track'><i style='width:100.0%'></i></div><b>$33,060.92</b></div><div class='bar-row'><span>2025-06</span><div class='track'><i style='width:96.1%'></i></div><b>$31,756.93</b></div></section>
+<section><h2>Findings</h2><ul><li>Electronics led net sales at $87,594.45.</li><li>Electronics had the highest share of refunded orders (14.6%). Review product-level returns before changing promotions.</li><li>2025-05 had the highest net revenue in the sample.</li></ul></section>
+<section><h2>Breakdown</h2><div class='scroll'><table><thead><tr><th scope='col'>Category</th><th scope='col'>Orders</th><th scope='col'>Net</th><th scope='col'>Refunded Orders %</th></tr></thead><tbody><tr><td>Electronics</td><td>280</td><td>$87,594.45</td><td>14.6%</td></tr><tr><td>Home</td><td>311</td><td>$45,409.86</td><td>6.4%</td></tr><tr><td>Apparel</td><td>286</td><td>$29,712.18</td><td>14.3%</td></tr><tr><td>Beauty</td><td>323</td><td>$26,100.95</td><td>6.8%</td></tr></tbody></table></div><h2>Channel</h2><div class='scroll'><table><thead><tr><th scope='col'>Channel</th><th scope='col'>Orders</th><th scope='col'>Net</th><th scope='col'>Refunded Orders %</th></tr></thead><tbody><tr><td>Store</td><td>627</td><td>$95,976.90</td><td>10.5%</td></tr><tr><td>Online</td><td>573</td><td>$92,840.54</td><td>10.1%</td></tr></tbody></table></div></section>
+<footer>Reproducible portfolio demo. All records are synthetic.</footer></main></html>
